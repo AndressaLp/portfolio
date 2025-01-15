@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Portfólio - Andressa</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">&lt;/Andressa&gt;</a>
+        <button onclick="abrirMenu()" class="menu_btn"><img src="./assets/menu.svg" alt="menu"></button>
+        <nav class="nav_bar">
+            <ul>
+                <li><a class="link_btn" href="#sobre">Sobre</a></li>
+                <li><a class="link_btn" href="#projetos">Projetos</a></li>
+                <li><a class="link_btn" href="#habilidades">Habilidades</a></li>
+                <li><a class="link_btn" href="#certificados">Certificados</a></li>
+                <li><a class="link_btn" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <ul>
+                <li><a class="link_btn" href="#sobre">Sobre</a></li>
+                <li><a class="link_btn" href="#projetos">Projetos</a></li>
+                <li><a class="link_btn" href="#habilidades">Habilidades</a></li>
+                <li><a class="link_btn" href="#certificados">Certificados</a></li>
+                <li><a class="link_btn" href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    <main onclick="fecharMenu()">
+        <section id="inicio">
+            <h2>Bem vindo(a) ao meu portfólio!</h2>
+            <div>
+                <h1>Andressa Lopes</h1>
+                <span>Desenvolvedora Front-end</span>
+            </div>
+            <a class="btn" href="/assets/curriculo.pdf" target="_blank">Currículo</a>
+        </section>
+        <section id="sobre">
+            <img src="./assets/imagem_sobre.png" alt="Desenho de uma menina com um notebook">
+            <div>
+                <h3>Sobre</h3>
+                <p>Olá, meu nome é Andressa Rodrigues Lopes, sou estudante de Engenharia de Software, com conhecimento básico nas principais tecnologias de desenvolvimento web, adquirido ao longo dos meus estudos e projetos pessoais.</p>
+                <p>Neste portfólio, apresento meus principais projetos, que mostram as minhas habilidades em criar interfaces de usuário funcionais e intuitivas. Embora eu ainda esteja no início da minha jornada profissional, dedico-me constantemente a aprimorar os meus conhecimentos, a fim de crescer na área de desenvolvimento web.</p>
+                <p>Busco oportunidades que me permitam aplicar meu conhecimento de forma prática e contribuir para o sucesso de projetos. Acredito que cada experiência é uma chance de evolução e estou pronta para enfrentar novos desafios.</p>
+            </div>
+        </section>
+        <section id="projetos">
+            <h3>Projetos</h3>
+            <p>Ao clicar nos cards, será aberto um modal com mais detalhes sobre cada projeto.</p>
+            <div class="carrossel">
+                <ul>
+                    <li>
+                        <img class="project" data-modal="proj1" src="./assets/gerenciador.png" alt="imagem do layout de um gerenciador de tarefas">
+                        <p>Gerenciador de tarefas</p>
+                    </li>
+                    <li>
+                        <img class="project" data-modal="proj2" src="./assets/greenLife.png" alt="imagem de um site de venda de produtos de jardinagem">
+                        <p>Green Life</p>
+                    </li>
+                    <li>
+                        <img class="project" data-modal="proj3" src="./assets/gta.png" alt="imagem do site de compra do jogo GTA">
+                        <p>GTA - Landing Page</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div id="proj1" class="modal">
+            <div class="box-modal">
+                <div>
+                    <h3>Gerenciador de tarefas</h3>
+                    <button class="close">&times;</button>
+                </div>
+                <img src="./assets/gerenciador.png" alt="imagem do layout de um gerenciador de tarefas">
+                <p>Sistema de gerenciamento de tarefas, desenvolvido com funções de adicionar, excluir, filtrar e buscar. Com uma interface simples e responsiva.</p>
+                <div>
+                    <ul>
+                        <li><img src="./assets/react.svg" alt="logo React"></li>
+                        <li><img src="./assets/tailwind.svg" alt="logo TailwindCss"></li>
+                    </ul>
+                    <a class="btn" href="https://gerenciador-de-tarefas-9gbwynoyv-andressas-projects-4c960c07.vercel.app/" target="_blank">Visualizar</a>
+                </div>
+            </div>
+        </div>
+        <div id="proj2" class="modal">
+            <div class="box-modal">
+                <div>
+                    <h3>Green Life</h3>
+                    <button class="close">&times;</button>
+                </div>
+                <img src="./assets/greenLife.png" alt="imagem de um site de venda de produtos de jardinagem">
+                <p> Site desenvolvido para venda de produtos de jardinagem. Conta com seções de produtos e dicas de jardinagem, em um layout responsivo e fácil de navegar.</p>
+                <div>
+                    <ul>
+                        <li><img src="./assets/html.svg" alt="logo HTML"></li>
+                        <li><img src="./assets/css.svg" alt="logo CSS"></li>
+                        <li><img src="./assets/js.svg" alt="logo Javascript"></li>
+                    </ul>
+                    <a class="btn" href="https://andressalp.github.io/site-GreenLife/" target="_blank">Visualizar</a>
+                </div>
+            </div>
+        </div>
+        <div id="proj3" class="modal">
+            <div class="box-modal">
+                <div>
+                    <h3>GTA - Landing Page</h3>
+                    <button class="close">&times;</button>
+                </div>
+                <img src="./assets/gta.png" alt="imagem do site de compra do jogo GTA">
+                <p> Site desenvolvido durante um curso do Youtube para compra do jogo GTA. Conta com um layout simples e responsivo.</p>
+                <div>
+                    <ul>
+                        <li><img src="./assets/html.svg" alt="logo HTML"></li>
+                        <li><img src="./assets/css.svg" alt="logo CSS"></li>
+                        <li><img src="./assets/js.svg" alt="logo Javascript"></li>
+                    </ul>
+                    <a class="btn" href="https://gta-landing-page-lac.vercel.app/" target="_blank">Visualizar</a>
+                </div>
+            </div>
+        </div>
+        <section id="habilidades">
+            <h3>Habilidades (nível iniciante)</h3>
+            <div>
+                <ul class="tech" style="--quantidade: 9">
+                    <li style="--delay: 0s;"><img src="./assets/html.svg" alt="">HTML</li>
+                    <li style="--delay: 1s;"><img src="./assets/css.svg" alt="">CSS</li>
+                    <li style="--delay: 2s;"><img src="./assets/js.svg" alt="">JavaScript</li>
+                    <li style="--delay: 3s;"><img src="./assets/react.svg" alt="">React</li>
+                    <li style="--delay: 4s;"><img src="./assets/tailwind.svg" alt="">TailwindCSS</li>
+                    <li style="--delay: 5s;"><img src="./assets/bootstrap.svg" alt="">Bootstrap</li>
+                    <li style="--delay: 6s;"><img src="./assets/sass.svg" alt="">Sass</li>
+                    <li style="--delay: 7s;"><img src="./assets/git.svg" alt="">GIT</li>
+                    <li style="--delay: 8s;"><img src="./assets/vscode.svg" alt="">VScode</li>
+                </ul>
+                <ul class="reverse" style="--quantidade: 6">
+                    <li style="--delay: 1s;">Lógica de programação</li>
+                    <li style="--delay: 2s;">Trabalho em equipe</li>
+                    <li style="--delay: 3s;">Metodologia ágil</li>
+                    <li style="--delay: 4s;">Layout responsivo</li>
+                    <li style="--delay: 5s;">UX / UI</li>
+                    <li style="--delay: 6s;">SEO</li>
+                </ul>
+            </div>
+        </section>
+        <section id="certificados">
+            <h3>Certificados</h3>
+            <div class="carrossel">
+                <ul>
+                    <li>
+                        <img src="./assets/certificados/imercao_front_end.png" alt="certificado do curso de imerção front-end da Alura">
+                        <p>Imerção front-end<br> - Alura - </p>
+                        <a href="./assets/certificados/imercao front-end - alura.pdf" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 24 24"><path fill="#ffffff" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm4.7-5.3l-1.4-1.4L17.6 5H14V3h7v7h-2V6.4z"/></svg></a>
+                    </li>
+                    <li>
+                        <img src="./assets/certificados/fundamentos.png" alt="certificado do curso de fundamentos da programação web da Rocketseat">
+                        <p>Fundamentos da programação web<br> - Rocketseat - </p>
+                        <a href="./assets/certificados/Fundamentos da programacao web - rocketseat.pdf" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 24 24"><path fill="#ffffff" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm4.7-5.3l-1.4-1.4L17.6 5H14V3h7v7h-2V6.4z"/></svg></a>
+                    </li>
+                    <li>
+                        <img src="./assets/certificados/prog_basica.png" alt="certificado do curso de programação básica em front-end do Senai">
+                        <p>Programação básica em front-end <br> - Senai - </p>
+                        <a href="./assets/certificados/Programacao basica em front-end - senai.pdf" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 24 24"><path fill="#ffffff" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h14v-7h2v7q0 .825-.587 1.413T19 21zm4.7-5.3l-1.4-1.4L17.6 5H14V3h7v7h-2V6.4z"/></svg></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contato">
+            <div class="box">
+                <h3>Contato:</h3>
+                <p>Entre em contato comigo por meio das minhas redes sociais abaixo!</p>
+                <div>
+                    <a href="https://github.com/AndressaLp" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M12 .999c-6.074 0-11 5.05-11 11.278c0 4.983 3.152 9.21 7.523 10.702c.55.104.727-.246.727-.543v-2.1c-3.06.683-3.697-1.33-3.697-1.33c-.5-1.304-1.222-1.65-1.222-1.65c-.998-.7.076-.686.076-.686c1.105.08 1.686 1.163 1.686 1.163c.98 1.724 2.573 1.226 3.201.937c.098-.728.383-1.226.698-1.508c-2.442-.286-5.01-1.253-5.01-5.574c0-1.232.429-2.237 1.132-3.027c-.114-.285-.49-1.432.107-2.985c0 0 .924-.303 3.026 1.156c.877-.25 1.818-.375 2.753-.38c.935.005 1.876.13 2.755.38c2.1-1.459 3.023-1.156 3.023-1.156c.598 1.554.222 2.701.108 2.985c.706.79 1.132 1.796 1.132 3.027c0 4.332-2.573 5.286-5.022 5.565c.394.35.754 1.036.754 2.088v3.095c0 .3.176.652.734.542C19.852 21.484 23 17.258 23 12.277C23 6.048 18.075.999 12 .999"/></svg></a>
+                    <a href="https://www.linkedin.com/in/andressalopes-315b00258/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803" clip-rule="evenodd"/></svg></a>
+                    <a href="mailto:andressarodrigueslopes157@gmail.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"/></svg></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Portfólio Andressa</p>
+        <p id="data"></p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

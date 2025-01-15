@@ -1,0 +1,243 @@
+@media (min-width: 550px) {
+    header{
+        padding: 10px;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 32px;
+    } 
+    h3{
+        font-size: 20px;
+    }
+    span{
+        font-size: 20px;
+    }
+
+    .modal .box-modal{
+        width: 325px;
+    }
+    
+    .close{
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 769px){
+    header{
+        padding: 15px;
+    }
+
+    .logo{
+        font-size: 22px;
+    }
+
+    .menu_btn{
+        display: none;
+    }
+    .nav_bar{
+        display: flex;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 34px;
+    } 
+    h3{
+        font-size: 22px;
+    }
+    span{
+        font-size: 22px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+
+    #inicio{
+        padding: 150px 60px 50px;
+    }
+
+    #sobre img{
+        width: 200px;
+        height: 200px;
+    }
+    #sobre p{
+        font-size: 12px;
+    }
+
+    #projetos p, #certificados ul li{
+        font-size: 12px;
+    }
+
+    .modal .box-modal{
+        width: 350px;
+    }
+    .modal .box-modal p{
+        font-size: 14px;
+    }
+    .close{
+        font-size: 42px;
+    }
+    
+    #habilidades .tech li img{
+        height: 25px;
+    }
+    
+    #habilidades .tech li{
+        font-size: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    #habilidades ul li{
+        font-size: 12px;
+        width: 100px;
+        height: 45px;
+    }
+
+    #contato div a svg{
+        width: 26px;
+        height: 26px;
+    }
+
+    #contato div p{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 950px){
+    .nav_bar ul{
+        gap: 35px;
+    }
+
+    .logo{
+        font-size: 24px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    span{
+        font-size: 24px;
+    }
+
+    #inicio{
+        padding: 150px 100px 50px;
+    }
+
+    #sobre img{
+        width: 235px;
+        height: 235px;
+    }
+    
+    footer{
+        font-size: 12px;
+        padding: 4px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .link_btn{
+        font-size: 16px;
+    }
+
+    .logo{
+        font-size: 26px;
+    }
+
+    #inicio{
+        padding: 150px 175px 50px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 38px;
+    }
+
+    h3{
+        font-size: 26px;
+    }
+    span{
+        font-size: 26px;
+    }
+
+    .btn{
+        font-size: 16px;
+    }
+
+    #sobre img{
+        width: 250px;
+        height: 250px;
+    }
+    #sobre p{
+        font-size: 14px;
+    }
+
+    #projetos p, #certificados ul li{
+        font-size: 14px;
+    }
+
+    #certificados ul li, #projetos ul li{
+        width: 170px;
+    }
+
+    #certificados ul li img, #projetos ul li img{
+        width: 160px;
+        height: 130px;
+    }
+
+    .modal .box-modal{
+        width: 400px;
+    }
+    .modal .box-modal img{
+        width: 70%;
+    }
+    .modal .box-modal p{
+        font-size: 16px;
+    }
+
+    #habilidades .tech li img{
+        height: 35px;
+    }
+    
+    #habilidades .tech li{
+        font-size: 12px;
+        width: 75px;
+        height: 75px;
+    }
+    
+    #habilidades ul li{
+        font-size: 14px;
+        width: 120px;
+        height: 50px;
+    }
+
+    #contato div a svg{
+        width: 28px;
+        height: 28px;
+    }
+
+    #contato div p{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1350px) {
+
+}
